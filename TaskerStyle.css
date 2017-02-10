@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+	font: "Times New Roman";
+	color: white;
+}
+
+a {
+	color: black;
+	font-size: 14px;
+	padding-left: 4px;
+	text-decoration: none;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tasker</title>
+        <link rel="stylesheet" href="TaskerStyle.css" />
+    </head>
+    <body>
+        <center>
+            <div class="container">
+                <div class="text" id="hobbies">
+                    <h2>Input Hobbies</h2>
+                </div>
+
+
+            
+
+            <div class="hobbies">
+                <form>
+                    <input type="text">
+                </form>
+            </div>
+            
+
+            <div class="text" id="selectTime">
+                <form>
+                    <p>Select Time</p>
+                </form>
+            </div>
+
+
+
+
+            <div class="time">
+            <form>
+                <input type="range"  min="0" max="5" value ="0" step="0.5" onchange="showValue(this.value)"/>
+                <span id="range">0</span>
+                <script type="text/javascript">
+                function showValue(newValue)
+                {
+                    document.getElementById("range").innerHTML=newValue;
+                }
+                </script>
+            </form>
+
+            </div>
+
+            <div class="more">
+                <form>
+                <button id="addAnother" class="btn btn-primary btn-lg">Add Another</button>
+            </form>
+            </div>
+
+            <div class="finished">
+            <a href= "Tasker.html"><button> Done </button></a>
+            <br><br>
+            <a href= "Tasker.html"><button>Home</button></a>
+            <a href= "Hobbies.html"><button>Hobbies</button></a>
+            <a href= "Settings.html"><button>Settings</button></a>
+
+            </div>
+
+          </div>  
+        </center>
+    </body>
+</html>
