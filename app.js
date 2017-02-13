@@ -9,8 +9,10 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var tasks = require('./routes/tasks');
+var inputTasks = require('./routes/inputTasks');
 var hobbies = require('./routes/hobbies');
+var settings = require('./routes/settings');
+var tasker = require('./routes/tasker');
 // Example route
 // var user = require('./routes/user');
 
@@ -38,6 +40,10 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
+app.get('/hobbies', hobbies.view);
+app.get('/inputTasks', inputTasks.view);
+app.get('/settings', settings.view);
+app.get('/tasker', tasker.view);
 // Example route
 // app.get('/users', user.list);
 
