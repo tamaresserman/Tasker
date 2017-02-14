@@ -51,7 +51,7 @@ app.get('/tasker', tasker.view);
 // app.get('/users', user.list);
 
 //add Hobby
-app.get('/add', add.addHobby)
+app.get('/add', add.addHobby);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

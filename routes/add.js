@@ -16,5 +16,6 @@ exports.addHobby= function(req, res) { 
 
 	data.hobbies.push(newHobby);
 
-	res.redirect('/');
+	// res.redirect('/');
+	res.render('hobbies', data)
  }
