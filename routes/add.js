@@ -6,7 +6,7 @@ exports.addHobby= function(req, res) { 
 	console.log("addHobby called");
 
 	var name = req.query.name;
-	var time = req.query.time;
+	var time = req.query.time + " hours";
 
 	var newHobby= {
 		name: name,

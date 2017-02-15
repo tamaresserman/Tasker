@@ -16,7 +16,7 @@
                 <!-- <div class="text" id="hobbies"> -->
                     <h2>Input Hobbies</h2>
 
-                    <form id="addHobbyForm" role="form" method="get" action="/add">
+            <form id="addHobbyForm" role="form" method="get" action="/add">
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
                     <input type="text" class="form-control" id="name" placeholder="Hobby" name="name">
@@ -33,8 +33,10 @@
                 function showValue(newValue)
                 {
                     document.getElementById("range").innerHTML=newValue;
+
                 }
                 </script>
+                
             <!-- </form> -->
 
             </div>
@@ -44,10 +46,8 @@
             </div>
 
             {{#each hobbies}}
-                <div class="friend-wrapper">
-                
-                <a href="#" class="click-listener"> <h3> {{name}}</h3></a>
-                <p>{{ time }}</p>
+                <div class="friend-wrapper" >
+                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}}: <span style="font-size:9pt; color: red">{{ time }} </span></h3></a> 
                 </div>
 
             {{/each}}

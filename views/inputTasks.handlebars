@@ -10,7 +10,38 @@
 <body>
 	<center>
 		<p>Input Task</p>
-		
+		      <form id="inputTaskForm" role="form" method="get" action="/addTask">
+                     <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="Name" placeholder="Task" name="name">
+            </div>
+                     <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="Date" placeholder="Date" name="date">
+            </div>
+                     <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="startTime" placeholder="Start Time" name="startTime">
+            </div>
+                     <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="endTime" placeholder="End Time" name="endTime">
+            </div>
+        
+
+            
+
+            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Task" form="inputTaskForm"></input>
+            </form>
+            </div>
+
+            {{#each Tasks}}
+                <div class="friend-wrapper" >
+                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}}: <span style="font-size:9pt; color: red">{{ date }}: {{startTime}}: {{endTime}} </span></h3></a> 
+                </div>
+
+            {{/each}}
+
    <form>
     <p> Title <input type="text" name="name" id="name" value="" /> </p>
   <p>

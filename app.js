@@ -18,7 +18,7 @@ var tasker = require('./routes/tasker');
 
 // So you can add a new hobby
 var add = require ('./routes/add')
-
+var addTask = require('./routes/addTask.js')
 var app = express();
 
 // all environments
@@ -52,6 +52,7 @@ app.get('/tasker', tasker.view);
 
 //add Hobby
 app.get('/add', add.addHobby);
+app.get('/addTask', addTask.addTask);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
