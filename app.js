@@ -13,12 +13,14 @@ var inputTasks = require('./routes/inputTasks');
 var hobbies = require('./routes/hobbies');
 var settings = require('./routes/settings');
 var tasker = require('./routes/tasker');
+var breaks = require('./routes/breaks');
 // Example route
 // var user = require('./routes/user');
 
 // So you can add a new hobby
 var add = require ('./routes/add')
-var addTask = require('./routes/addTask.js')
+var addTask = require('./routes/addTask')
+//var addBreaks = require('.routes/breaks')
 var app = express();
 
 // all environments
@@ -47,12 +49,14 @@ app.get('/hobbies', hobbies.view);
 app.get('/inputTasks', inputTasks.view);
 app.get('/settings', settings.view);
 app.get('/tasker', tasker.view);
+app.get('/breaks', breaks.view)
 // Example route
 // app.get('/users', user.list);
 
 //add Hobby
 app.get('/add', add.addHobby);
 app.get('/addTask', addTask.addTask);
+//app.get('/addBreaks', addbreaks.addBreaks')
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

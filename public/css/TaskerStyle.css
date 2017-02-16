@@ -1,19 +1,86 @@
 body {
     background-color: lightblue;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    
 }
 
 h1 {
-	font: "Times New Roman";
+	font: "Lobster";
 	color: white;
+	font-size: 700%;
+	
+
+	
 }
 
 a {
-	color: black;
-	font-size: 30px;
-	padding-left: 20px;
+	color:white;
+	font-size: 800%;
+	border-color:black;
+	border-right-width:10%;
+	text-align:middle;
+	padding-bottom: 50%;
+	/*padding-top: 50%;*/
 	text-decoration: none;
 	width:120px;
 	height:200px;
+	vertical-align:middle;
+
+
+
+	
+
 }
 
+button {
+	color:white;
+	background-color:black;
+	height:30%;
+	width:30%;
+	font-size: 50%;
+	/*padding-bottom:10%;*/
+	border-radius:10%;
+	text-align:middle;
+	vertical-align:middle;
+	background-color:white;
+	font-color:white;
+	padding-top:5%;
+	padding-bottom:5%;
+	border-style:solid;
+
+
+
+
+}
+#breakButton {
+	width:50%;
+	border-style:solid;
+border-color:white;
+background-color:black;
+border-
+}
+#hobbyButton{
+border-style:solid;
+vertical-align:left;
+border-style:solid;
+border-color:white;
+font-color:white;
+background-color:black;
+
+}
+#taskButton{
+font-color:white;	
+border-style:solid;
+border-color:white;
+background-color:black;
+}
+.calendar {
+	height:100%;
+	width:100%;
+	padding-top:10%;
+	padding-bottom:5%;
+	font-size:34pt;
+}
 

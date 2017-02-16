@@ -1,10 +1,60 @@
+body{
+	background:lightblue;
+
+}
 h1{
 	border-top-color:black;
-	font-size:30pt;
-	font:serif;
+	font-size:600%;
+	color:white;
+
+	
+	
 }
 h2 {
-font-size:20pt;
-color: blue;
-font:sans-serif; ;
+font-size:550%;
+color: white;
+
+}
+button{
+	font-size:400%;
+	font-style:bold;
+	border-radius:10%;
+	background-color:white;
+	height:40%;
+	width:40%;
+	padding-top:3%;
+	padding-bottom:3%;
+	border-style:solid;
+	border-color:black;
+
+}
+.information{
+	padding-bottom:12%;
+	font-size:300%;
+
+
+}
+#name{
+	font-size:125%;
+	border-radius:10%;
+	border-style:solid;
+	border-color:black;
+
+}
+#password{
+	font-size:125%;
+	border-radius:10%;
+	border-style:solid;
+	border-color:black;
+}
+#number{
+	font-size:125%;
+	border-radius:10%;
+	border-style:solid;
+	border-color:black;
+}
+p{
+	font-size:50pt;
+	font-style:bold;
+
 }

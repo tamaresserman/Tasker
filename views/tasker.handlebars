@@ -2,19 +2,20 @@
 <html>
   <head>
     <title> Tasker </title>
-    <center><u><h1> Welcome to Tasker </h1></u>
+    <center><h1> Welcome to Tasker </h1>
     </center>
 
     <link rel="stylesheet" type= "text/css" href="css/TaskerStyle.css">
   </head>
     <body>
       <center>
-        <center>
-        <div class="mainButton" style="width:60px;height:100px;">
-        <a href= "hobbies"><button>Hobbies</button> </a>
-        <a href= "inputTasks"><button>Tasks</button></a>
-      </center>
-      </div>
+        
+        
+        <a href= "hobbies"><button id="hobbyButton">Hobbies</button> </a>
+        <a href= "inputTasks"><button id="taskButton">Tasks</button></a>
+    
+   
+      <div class="calendar">
         <script language="javascript" type="text/javascript">
           var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
           var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
@@ -41,9 +42,9 @@
 
           var TR_start = '<TR>';
           var TR_end = '</TR>';
-          var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=BBBBBB BORDERCOLOR=#FFFFFF><TR><TD WIDTH=20><B><CENTER>';
+          var highlight_start = '<TD WIDTH="30"><TD HEIGHT="100"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=BBBBBB BORDERCOLOR=#FFFFFF><TR><TD WIDTH=30><B><CENTER>';
           var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
-          var TD_start = '<TD WIDTH="30"><CENTER>';
+          var TD_start = '<TD WIDTH="30"><TD HEIGHT="100"><CENTER>';
           var TD_end = '</CENTER></TD>';
 
           /* BEGIN CODE FOR CALENDAR
@@ -123,11 +124,12 @@
           //  End -->
         </script>
         <br>
+      </div>
         <!--<a href= "UpdateHobbies.html">Update Hobbies</a>-->
         <!--<br><br>-->
-        <a href= "tasker"><button>Home</button></a>
+        <a href= "breaks"><button id= "breakButton">Breaks</button></a>
         
-        <a href= "settings"><button>Settings</button></a>
+        
         
       </center>
     </body>
