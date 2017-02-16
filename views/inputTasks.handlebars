@@ -17,15 +17,15 @@
             </div>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Date" placeholder="Date" name="date">
+                    <input type="text" class="form-control" id="Date" placeholder="Date: MM/DD/YYYY" name="date">
             </div>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="startTime" placeholder="Start Time" name="startTime">
+                    <input type="text" class="form-control" id="startTime" placeholder="Start Time: 11:00 AM" name="startTime">
             </div>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="endTime" placeholder="End Time" name="endTime">
+                    <input type="text" class="form-control" id="endTime" placeholder="End Time: 12:00 PM" name="endTime">
             </div>
         
 
@@ -37,7 +37,7 @@
 
             {{#each Tasks}}
                 <div class="friend-wrapper" >
-                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:13pt; color: blue">{{ date }}: {{startTime}}- {{endTime}} </span></h3></a> 
+                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:16pt; color: black">{{ date }}: {{startTime}}- {{endTime}} </span></h3></a> 
                 </div>
 
             {{/each}}
