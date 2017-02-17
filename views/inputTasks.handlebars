@@ -9,7 +9,7 @@
 </head>
 <body>
 	<center>
-		<p>Input Task</p>
+		<h1>Input Task</h1>
 		      <form id="inputTaskForm" role="form" method="get" action="/addTask">
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
@@ -36,13 +36,13 @@
             </div>
 
             {{#each Tasks}}
-                <div class="friend-wrapper" >
+                <div class="friend-wrapper" id="taskInformation">
                     <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}: {{startTime}}- {{endTime}} </span></h3></a> 
                 </div>
 
             {{/each}}
 
-   <form>
+   
     <!-- <p> Title <input type="text" name="name" id="name" value="" /> </p> 
   <p>
     Date <input type="text" date="date" id="date" value="" />
@@ -131,8 +131,8 @@
   </div>
 </div>
 -->
-<input type="button" onclick="location.href='tasker';" value="Done" />
-</form>
+<!--<input type="button" id="doneBtn" onclick="location.href='tasker';" value="Done" />
+</form>-->
 <a href= "tasker"><button>Home</button></a>
 <a href= "breaks"><button>Breaks</button></a>
 <a href= "hobbies"><button>Hobbies</button></a>
