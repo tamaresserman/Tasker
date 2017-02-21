@@ -9,35 +9,65 @@
 </head>
 <body>
 	<center>
-		<h1>Input Task</h1>
+		<h1>Input Hobbies and Constraints</h1>
 		      <form id="inputTaskForm" role="form" method="get" action="/addTask">
+            <p>Hobby Name</p>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Name" placeholder="Task" name="name">
+                    <input type="text" class="form-control" id="Name" placeholder="Shop" name="name">
             </div>
+            <p>Constraint: Cost</p>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Date" placeholder="Date: MM/DD/YYYY" name="date">
+                    <input type="text" class="form-control" id="Date" placeholder="$20" name="date">
             </div>
+            <p>Constraint: Distance</p>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="startTime" placeholder="Start Time: 11:00 AM" name="startTime">
+                    <input type="text" class="form-control" id="startTime" placeholder="20 min drive" name="startTime">
             </div>
+            <p>Constraint: Objects</p>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="endTime" placeholder="End Time: 12:00 PM" name="endTime">
+                    <input type="text" class="form-control" id="endTime" placeholder="Tennis balls" name="endTime">
             </div>
+            <p>Constraint: Location</p>
+             <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="Location" placeholder= "Outdoors on grass" name="Location">
+            </div>
+            <p>Constraint: Mess</p>
+             <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="Mess" placeholder="Need to shower after" name="Mess">
+            </div>
+            <p>Constraint: Time</p>
+            <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="Time" placeholder="Only in the morning" name="Time">
+            </div>
+            <p>Constraint: Individual/Group</p>
+            <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="Size" placeholder=" Individual activity" name="Size">
+            </div>
+            <p>Constraint: Other</p>
+            <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                    <input type="text" class="form-control" id="Other" placeholder="Only do once a week" name="Other">
+            </div>
+            
         
 
             
 
-            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Task" form="inputTaskForm"></input>
+            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Hobby" form="inputTaskForm"></input>
             </form>
             </div>
 
             {{#each Tasks}}
                 <div class="friend-wrapper" id="taskInformation">
-                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}: {{startTime}}- {{endTime}} </span></h3></a> 
+                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}, {{startTime}}, {{endTime}}, {{Location}}, {{Mess}}, {{Time}}, {{Size}}, {{Other}} </span></h3></a> 
                 </div>
 
             {{/each}}
@@ -134,8 +164,8 @@
 <!--<input type="button" id="doneBtn" onclick="location.href='tasker';" value="Done" />
 </form>-->
 <a href= "tasker"><button>Home</button></a>
-<a href= "breaks"><button>Breaks</button></a>
-<a href= "hobbies"><button>Hobbies</button></a>
+<a href= "breaks"><button>List</button></a>
+<a href= "hobbies"><button>Breaks</button></a>
 
             <!--<a href ="inputTasks"><button>Tasks</button></a>-->
 </center>

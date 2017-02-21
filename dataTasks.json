@@ -1,11 +1,15 @@
 {
 	"Tasks": [
 	{
-		"name": "Study",
-		"date": "9/18/2017",
-		"startTime": "10:00 AM",
-		"endTime": "12:00 PM"
-		
+		"name": "Swim",
+		"date": "free",
+		"startTime": "15 minute walk",
+		"endTime": "bathing suit",
+		"Location": "Outdoors in a pool",
+		"Mess": "Need to shower",
+		"Time": "Pool only open from 9:00 AM to 6:00 PM",
+		"Size": "By myself",
+		"Other": "Only swim twice a week"
 
 	}
 	
