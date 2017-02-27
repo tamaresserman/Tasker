@@ -49,3 +49,13 @@ p{
     font-size:14pt;
     font-style:bold;
 }
+.navbar-inverse{
+    background-color:white;
+}
+.topButtons{
+    position:fixed;
+    top:0;
+    text-align: center;
+    width:100%;
+    left:0;
+}

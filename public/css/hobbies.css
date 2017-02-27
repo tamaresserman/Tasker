@@ -58,3 +58,13 @@ a{
    padding-right:10%;
 
 }
+.navbar-inverse{
+	background-color:white;
+}
+.topButtons{
+	position:fixed;
+	top:0;
+	text-align: center;
+	width:100%;
+	left:0;
+}
