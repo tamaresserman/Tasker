@@ -13,6 +13,7 @@ var inputTasks = require('./routes/inputTasks');
 var hobbies = require('./routes/hobbies');
 var settings = require('./routes/settings');
 var tasker = require('./routes/tasker');
+var list = require('./routes/list');
 var breaks = require('./routes/breaks');
 // Example route
 // var user = require('./routes/user');
@@ -49,7 +50,8 @@ app.get('/hobbies', hobbies.view);
 app.get('/inputTasks', inputTasks.view);
 app.get('/settings', settings.view);
 app.get('/tasker', tasker.view);
-app.get('/breaks', breaks.view)
+app.get('/breaks', breaks.view);
+app.get('/list', list.addTask);
 // Example route
 // app.get('/users', user.list);
 

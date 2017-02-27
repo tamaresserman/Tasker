@@ -23,3 +23,11 @@ p{
 	font-size:150%;
 	text-align:left;
 }
+
+#taskInformation{
+    text-align: left;
+}
+h2{
+	text-align: left;
+	color:darkblue;
+}

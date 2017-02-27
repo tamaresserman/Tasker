@@ -44,4 +44,8 @@ button{
     padding-bottom:7%;
 }
 /* Dropdown Button */
-p{text-align:left;}
+p{
+    text-align:left;
+    font-size:14pt;
+    font-style:bold;
+}

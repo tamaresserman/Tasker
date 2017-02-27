@@ -10,7 +10,7 @@
 <body>
 	<center>
 		<h1>Input Hobbies and Constraints</h1>
-		      <form id="inputTaskForm" role="form" method="get" action="/addTask">
+		      <form id="inputTaskForm" role="form" method="get" action="/list">
             <p>Hobby Name</p>
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
@@ -34,9 +34,9 @@
             <p>Constraint: Location</p>
              <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Location" placeholder= "Outdoors on grass" name="Location">
+                    <input type="text" class="form-control" id="location" placeholder= "Outdoors on grass" name="location">
             </div>
-            <p>Constraint: Mess</p>
+            <p>Constraint: Cleanliness</p>
              <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
                     <input type="text" class="form-control" id="Mess" placeholder="Need to shower after" name="Mess">
@@ -67,7 +67,7 @@
 
             {{#each Tasks}}
                 <div class="friend-wrapper" id="taskInformation">
-                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}, {{startTime}}, {{endTime}}, {{Location}}, {{Mess}}, {{Time}}, {{Size}}, {{Other}} </span></h3></a> 
+                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}, {{startTime}}, {{endTime}}, {{location}}, {{Mess}}, {{Time}}, {{Size}}, {{Other}} </span></h3></a> 
                 </div>
 
             {{/each}}
@@ -164,7 +164,7 @@
 <!--<input type="button" id="doneBtn" onclick="location.href='tasker';" value="Done" />
 </form>-->
 <a href= "tasker"><button>Home</button></a>
-<a href= "breaks"><button>List</button></a>
+<a href= "breaks"><button>View</button></a>
 <a href= "hobbies"><button>Breaks</button></a>
 
             <!--<a href ="inputTasks"><button>Tasks</button></a>-->

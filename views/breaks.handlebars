@@ -13,13 +13,23 @@
 <body>
 	<center>
     <h1>Breaks</h1>
-    <p>
-      You have a 2 hour break from 12:30 AM to 2:30 PM.<br/> You can: Run, Swim, Paint. 
-    </p>
-    <p>
+   <h2>List of Hobbies</h2>
+     {{#each list}}
+                <div class="friend-wrapper" id="taskInformation">
+                    <a href="#" class="click-listener"><span style "font-size:40pt;"> Hobby Name: {{name}}</span> <span><br/></span>
+                      <h3> <span style="font-size:14pt; color: black;">
+                      1. Cost: {{ date }} <span><br/></span>
+                      2. Distance:  {{startTime}}<span><br/></span>
+                      3. Objects: {{endTime}} <span><br/></span>
+                      4. Locations: {{location}}<span><br/></span> 
+                      5. Level of Mess: {{Mess}} <span><br/></span>
+                      6. Time: {{Time}} <span><br/></span>
+                      7. Individual/Group: {{Size}} <span><br/></span>
+                      8. Other:  {{Other}}</span> </h3></a> 
+                </div>
 
-      You have a 3 hour break from 4:30 PM to 7:30 PM. <br/>You can: Run, Swim, Paint, Hike. 
-    </p>
+            {{/each}}
+    
 
 
 
