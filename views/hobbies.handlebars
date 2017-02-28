@@ -7,35 +7,61 @@
         <link rel="stylesheet" href="css/hobbies.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
+        <script src="/js/introHCI.js"></script>
     </head>
     
     <body>
         <center>
-            <div class="container">
-                <!-- <div class="text" id="hobbies"> -->
-                    <h1>Input Breaks</h1>
+            <div class="topButtons">
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
-            <form id="addHobbyForm" role="form" method="get" action="/add">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="tasker">Home</a></li>
+                <li><a href="hobbies">Input Breaks</a></li>
+                <li><a href="inputTasks">Input Hobbies</a></li>
+                <li><a href="breaks">View Hobbies</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+            <a href="#" id="addBreak"><button>Add Break</button></a>
+            <div class="container breakTime">
+                <!-- <div class="text" id="hobbies"> -->
+                <h1>Input Breaks</h1>
+
+                <form id="addHobbyForm" role="form" method="get" action="/add">
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="name" placeholder="Study Break" name="name">
-            </div>
+                        <input type="text" class="form-control" id="name" placeholder="Study Break" name="name">
+                    </div>
         
 
-            <div class="form-group">
-            <!-- <div class="time"> -->
-            <!--   <form> -->
-                <label for="time">Time:</label> 
-                <input type="range"  min="0" max="5" value ="0" step="0.5" onchange="showValue(this.value)" name="time" form="addHobbyForm"/>
-                <span id="range">0</span>
-                <script type="text/javascript">
-                function showValue(newValue)
-                {
-                    document.getElementById("range").innerHTML=newValue +" hours";
+                    <div class="form-group">
+                <!-- <div class="time"> -->
+                <!--   <form> -->
+                    <label for="time">Time:</label> 
+                    <input type="range"  min="0" max="5" value ="0" step="0.5" onchange="showValue(this.value)" name="time" form="addHobbyForm"/>
+                    <span id="range">0</span>
+                    <script type="text/javascript">
+                    function showValue(newValue)
+                    {
+                        document.getElementById("range").innerHTML=newValue +" hours";
 
-                }
-                </script>
+                    }
+                    </script>
                 
             <!-- </form> -->
 
@@ -55,12 +81,7 @@
 
             
             <br><br>
-            <div class="bottom" id="footer">
-            <a href= "tasker"><button>Home</button></a>
-            <!--<a href= "hobbies"><button>Hobbies</button></a>-->
-            <a href= "breaks"><button>List</button></a>
-            <a href ="inputTasks"><button>Hobbies</button></a>
-        </div>
+            
 
             <!-- </div> -->
 

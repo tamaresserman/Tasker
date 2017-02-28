@@ -1,6 +1,6 @@
-var dataTask = require("../dataTasks.json");
+var list = require("../list.json");
 
-exports.addTask= function(req, res) {    
+exports.addTask= function(req, res) {  
 	// Your code goes here
 
 	console.log("addTask called");
@@ -15,7 +15,7 @@ exports.addTask= function(req, res) { 
 	var Size= req.query.Size;
 	var Other= req.query.Other;
 
-	var newTasks= {
+	var newlist= {
 		name: name,
 		//description: description,
 		date: date,
@@ -28,11 +28,11 @@ exports.addTask= function(req, res) { 
 		Other: Other
 	}
 
-	console.log(newTasks);
+	console.log(list);
 
-	dataTask.Tasks.push(newTasks);
+	list.list.push(newlist);
 
 
 	// res.redirect('/');
-	res.render('inputTasks', dataTask)
- }
+	res.render('breaks', list)
+}

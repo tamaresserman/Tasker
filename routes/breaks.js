@@ -3,7 +3,9 @@
  * GET home page.
  *///var data = require("../addBreak.json");
 
-exports.view = function(req, res){
-	/*console.log(data);*/
-  res.render('breaks');
+//var data = require("../dataTasks.json");//var data = require('../data.json');
+var list = require("../list.json");
+exports.view = function(req, res) {
+	//console.log(data);
+	res.render('breaks', list);
 };
