@@ -2,26 +2,67 @@
 <html>
   <head>
     <title> Tasker </title>
-    <center><h1>Tasker</h1>
+    <!-- <center><h1>Tasker</h1>
     
       <h2>Login</h2>
 
-    </center>
+    </center> -->
 
     <link rel="stylesheet" type= "text/css" href="css/login.css">
   </head>
     <body>
-      <center>
-        <div class= "information">
-        <p> Username </p>
-        <input type="text" name="name" id="name" value="" />
-        <p> Password </p>
-        <input type="text" name="password" id="password" value="" />
-       
-    </div>
+      <!--<center>
+        <h1>Tasker</h1>
+      
+        <h2>Login</h2>
 
-        <a href= "tasker"><button> Login </button></a>
-            <br><br>
-      </center>
+      </center>-->
+      {{#if showAlternate}}
+        <center>
+          <h1> Welcome to Tasker </h1>
+          <h2> Please Login Below </h2>
+
+          <div class= "information">
+            <p> Username </p>
+            <input type="text" name="name" id="name" value="" />
+            <p> Password </p>
+            <input type="text" name="password" id="password" value="" />
+          </div>
+
+          <a href= "tasker"><button> Login </button></a>
+          
+          <br><br>
+
+        </center>
+      {{else}}
+        <center>
+          <h1>Tasker</h1>
+          <h2>Login</h2>
+
+          <div class= "information">
+            <p> Username </p>
+            <input type="text" name="name" id="name" value="" />
+            <p> Password </p>
+            <input type="text" name="password" id="password" value="" />
+          </div>
+
+          <a href= "tasker"><button> Login </button></a>
+          
+          <br><br>
+
+        </center>
+      {{/if}}
+
+      <!--Google Analytics-->
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-92787718-1', 'auto');
+        ga('send', 'pageview');
+      </script>
     </body>
 </html>
