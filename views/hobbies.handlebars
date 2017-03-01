@@ -37,15 +37,16 @@
     </div>
 </nav>
 </div>
-            <a href="#" id="addBreak"><button>Add Break</button></a>
+        {{#if showAlternate}}
+            <!--<a href="#" id="addBreak"><button>Add Break</button></a>
             <div class="container breakTime">
-                <!-- <div class="text" id="hobbies"> -->
+                <div class="text" id="hobbies"> -->
                 <h1>Input Breaks</h1>
 
                 <form id="addHobbyForm" role="form" method="get" action="/add">
                      <div class="form-group">
                      <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="name" placeholder="Study Break" name="name">
+                        <input type="text" class="form-control" id="name" placeholder="Ex: Study Break" name="name">
                     </div>
         
 
@@ -80,6 +81,53 @@
             <br><br>
           </div>  
         </center>
+
+        {{else}}
+
+            <div class="space"><a href="#" id="addBreak"><button> Break</button></a></div>
+            <div class="container breakTime">
+                <!-- <div class="text" id="hobbies"> -->
+                <h1>Input Breaks</h1>
+
+                <form id="addHobbyForm" role="form" method="get" action="/add">
+                     <div class="form-group">
+                     <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="name" placeholder="Ex: Study Break" name="name">
+                    </div>
+        
+
+                    <div class="form-group">
+                <!-- <div class="time"> -->
+                <!--   <form> -->
+                    <label for="time">Time:</label> 
+                    <input type="range"  min="0" max="5" value ="0" step="0.5" onchange="showValue(this.value)" name="time" form="addHobbyForm"/>
+                    <span id="range">0</span>
+                    <script type="text/javascript">
+                    function showValue(newValue)
+                    {
+                        document.getElementById("range").innerHTML=newValue +" hours";
+
+                    }
+                    </script>
+                
+            <!-- </form> -->
+
+            </div>
+
+            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Break" form="addHobbyForm"></input>
+            </form>
+            </div>
+
+            {{#each hobbies}}
+                <div class="friend-wrapper" id="hobbiesInformation" >
+                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}}: <span style="font-size:16pt; color: black">{{ time }} </span></h3></a> 
+                </div>
+            {{/each}}
+
+            <br><br>
+          </div>  
+        </center>
+        {{/if}}
 
         <!--Google Analytics-->
     

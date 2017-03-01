@@ -18,6 +18,9 @@ var breaks = require('./routes/breaks');
 // Example route
 // var user = require('./routes/user');
 
+var tasker2 = require('./routes/tasker2');
+
+
 // So you can add a new hobby
 var add = require ('./routes/add')
 var addTask = require('./routes/addTask')
@@ -70,6 +73,8 @@ app.get('/addTask', addTask.addTask);
 
 //B version login screen
 app.get('/new', index.view2);
+
+app.get('/tasker2', tasker2.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
