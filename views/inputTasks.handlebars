@@ -1,196 +1,208 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/inputTasks.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<center>
-  <div class="topButtons">
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/inputTasks.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<center>
+      <div class="topButtons">
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="tasker">Home</a></li>
-                <li><a href="hobbies">Input Breaks</a></li>
-                <li><a href="inputTasks">Input Hobbies</a></li>
-                <li><a href="breaks">View Hobbies</a></li>
-                
-            </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="tasker">Home</a></li>
+                    <li><a href="hobbies">Input Breaks</a></li>
+                    <li><a href="inputTasks">Input Hobbies</a></li>
+                    <li><a href="breaks">View Hobbies</a></li>
+                    
+                </ul>
+            </div>
         </div>
+    </nav>
     </div>
-</nav>
-</div>
-		<h1>Input Hobbies and Constraints</h1>
-		      <form id="inputTaskForm" role="form" method="get" action="/list">
-            <p>Hobby Name</p>
-                     <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Name" placeholder="Shop" name="name">
-            </div>
-            <p>Constraint: Cost</p>
-                     <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Date" placeholder="$20" name="date">
-            </div>
-            <p>Constraint: Distance</p>
-                     <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="startTime" placeholder="20 min drive" name="startTime">
-            </div>
-            <p>Constraint: Objects</p>
-                     <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="endTime" placeholder="Tennis balls" name="endTime">
-            </div>
-            <p>Constraint: Location</p>
-             <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="location" placeholder= "Outdoors on grass" name="location">
-            </div>
-            <p>Constraint: Cleanliness</p>
-             <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Mess" placeholder="Need to shower after" name="Mess">
-            </div>
-            <p>Constraint: Time</p>
-            <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Time" placeholder="Only in the morning" name="Time">
-            </div>
-            <p>Constraint: Individual/Group</p>
-            <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Size" placeholder=" Individual activity" name="Size">
-            </div>
-            <p>Constraint: Other</p>
-            <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                    <input type="text" class="form-control" id="Other" placeholder="Only do once a week" name="Other">
-            </div>
-            
-        
-
+    		<h1>Input Hobbies and Constraints</h1>
+    		      <form id="inputTaskForm" role="form" method="get" action="/list">
+                <p>Hobby Name</p>
+                         <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="Name" placeholder="Shop" name="name">
+                </div>
+                <p>Constraint: Cost</p>
+                         <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="Date" placeholder="$20" name="date">
+                </div>
+                <p>Constraint: Distance</p>
+                         <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="startTime" placeholder="20 min drive" name="startTime">
+                </div>
+                <p>Constraint: Objects</p>
+                         <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="endTime" placeholder="Tennis balls" name="endTime">
+                </div>
+                <p>Constraint: Location</p>
+                 <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="location" placeholder= "Outdoors on grass" name="location">
+                </div>
+                <p>Constraint: Cleanliness</p>
+                 <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="Mess" placeholder="Need to shower after" name="Mess">
+                </div>
+                <p>Constraint: Time</p>
+                <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="Time" placeholder="Only in the morning" name="Time">
+                </div>
+                <p>Constraint: Individual/Group</p>
+                <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="Size" placeholder=" Individual activity" name="Size">
+                </div>
+                <p>Constraint: Other</p>
+                <div class="form-group">
+                         <!-- <label for="name">Name:</label> -->
+                        <input type="text" class="form-control" id="Other" placeholder="Only do once a week" name="Other">
+                </div>
+                
             
 
-            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Hobby" form="inputTaskForm"></input>
-            </form>
-            </div>
+                
 
-            {{#each Tasks}}
-                <div class="friend-wrapper" id="taskInformation">
-                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}, {{startTime}}, {{endTime}}, {{location}}, {{Mess}}, {{Time}}, {{Size}}, {{Other}} </span></h3></a> 
+                <input type="submit" id="submitBtn" class="btn btn-default" value="Add Hobby" form="inputTaskForm"></input>
+                </form>
                 </div>
 
-            {{/each}}
+                {{#each Tasks}}
+                    <div class="friend-wrapper" id="taskInformation">
+                        <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}, {{startTime}}, {{endTime}}, {{location}}, {{Mess}}, {{Time}}, {{Size}}, {{Other}} </span></h3></a> 
+                    </div>
 
-   
-    <!-- <p> Title <input type="text" name="name" id="name" value="" /> </p> 
-  <p>
-    Date <input type="text" date="date" id="date" value="" />
-  </p>
+                {{/each}}
 
-<div class="container">
-                                            
-  <div class="dropdown">
-  
-    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Start Time
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 PM</a></li>
-    </ul>
+       
+        <!-- <p> Title <input type="text" name="name" id="name" value="" /> </p> 
+      <p>
+        Date <input type="text" date="date" id="date" value="" />
+      </p>
 
-  </div>
-</div>
+    <div class="container">
+                                                
+      <div class="dropdown">
+      
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Start Time
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 PM</a></li>
+        </ul>
 
-<div class="container">
-                                            
-  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">End Time
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 AM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 PM</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 PM</a></li>
-    </ul>
-  </div>
-</div>
+      </div>
+    </div>
 
-<div class="container">
-                                            
-  <div class="dropdown">
-  
-    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Repeat
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">None</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Once a Week</a></li>
-      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Everyday</a></li>
-  </div>
-</div>
--->
-<!--<input type="button" id="doneBtn" onclick="location.href='tasker';" value="Done" />
-</form>-->
+    <div class="container">
+                                                
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">End Time
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 AM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">12 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">7 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">8 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">9 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 PM</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11 PM</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+                                                
+      <div class="dropdown">
+      
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Repeat
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">None</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Once a Week</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Everyday</a></li>
+      </div>
+    </div>
+    -->
+    <!--<input type="button" id="doneBtn" onclick="location.href='tasker';" value="Done" />
+    </form>-->
 
 
-            <!--<a href ="inputTasks"><button>Tasks</button></a>-->
-</center>
-</body>
+                <!--<a href ="inputTasks"><button>Tasks</button></a>-->
+    </center>
+
+    <!--Google Analytics-->
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-92787718-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
