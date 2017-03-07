@@ -10,14 +10,21 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.breakTime').hide();
-	$("#submitBtn").click(sendClick);
+	//$("#submitBtn").click(sendClick);
 	$('#addBreak').click(function(){
 		$('.breakTime').show();
 
 	})
+	$('#loginBtnA').click(sendClickA);
+	$('#loginBtnB').click(sendClickB);
 }
 
-function sendClick(e){
-	console.log("button clicked");
-	ga('send','event','addBreak','click');
+function sendClickA(e){
+	console.log("button A clicked");
+	ga('send','event','addBreakA','click');
+}
+
+function sendClickB(e){
+	console.log("button B clicked");
+	ga('send','event','addBreakB','click');
 }
