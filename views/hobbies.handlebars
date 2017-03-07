@@ -1,144 +1,88 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Tasker</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/hobbies.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="/js/introHCI.js"></script>
-    </head>
-    
-    <body>
-        <center>
-            <div class="topButtons">
-            <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>View Hobbies </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/break.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<center>
+      <div class="topButtons">
+      <!-- <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container">
             <ul class="nav navbar-nav">
                 <li><a href="tasker">Home</a></li>
-                <li><a href="hobbies">Input Breaks</a></li>
-                <li><a href="inputTasks">Input Hobbies</a></li>
-                <li><a href="breaks">View Hobbies</a></li>
-                
-            </ul>
-        </div>
-    </div>
-</nav>
-</div>
-        {{#if showAlternate}}
-            <!--<a href="#" id="addBreak"><button>Add Break</button></a>
-            <div class="container breakTime">
-                <div class="text" id="hobbies"> -->
-                <h1>Input Breaks</h1>
+                <li><a href="hobbies">Breaks</a></li>
+                <li><a href="inputTasks">Hobbies</a></li>
+                  
+              </ul>
+          </div>
+      </nav>-->
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
 
-                <form id="addHobbyForm" role="form" method="get" action="/add">
-                     <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="name" placeholder="Ex: Study Break" name="name">
-                    </div>
-        
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                      <li><a href="keepinmind">Home</a></li>
+                      <li><a href="inputBreaks">Input Breaks</a></li>
+                      <li><a href="inputHobbies">Input Hobbies</a></li>
+                      <li><a href="hobbies">View Hobbies</a></li>
+                      <li><a href="moreInfo">More Information</a></li>
 
-                    <div class="form-group">
-                <!-- <div class="time"> -->
-                <!--   <form> -->
-                    <label for="time">Time:</label> 
-                    <input type="range"  min="0" max="5" value ="0" step="0.5" onchange="showValue(this.value)" name="time" form="addHobbyForm"/>
-                    <span id="range">0</span>
-                    <script type="text/javascript">
-                    function showValue(newValue)
-                    {
-                        document.getElementById("range").innerHTML=newValue +" hours";
-
-                    }
-                    </script>
-                
-            <!-- </form> -->
-
+                      
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      </div>
+      <!--<a href= "tasker"><button>Home</button></a>
+      <a href= "hobbies"><button>Breaks</button></a>
+              
+      <a href ="inputTasks"><button>Hobbies</button></a>
+      </div>-->
+      <h1>List of Hobbies</h1>
+      <!--<h2>List of Hobbies</h2>-->
+      {{#each list}}
+          <div class="friend-wrapper" id="taskInformation">
+            <a href="#" class="click-listener"><span style "font-size:40pt;"> Hobby Name: {{name}}</span> <span><br/></span>
+            <h3> <span style="font-size:14pt; color: black;">
+            1. Cost: {{ date }} <span><br/></span>
+            2. Distance:  {{startTime}}<span><br/></span>
+            3. Objects: {{endTime}} <span><br/></span>
+            4. Locations: {{location}}<span><br/></span> 
+            5. Level of Mess: {{Mess}} <span><br/></span>
+            6. Time: {{Time}} <span><br/></span>
+            7. Individual/Group: {{Size}} <span><br/></span>
+            8. Other:  {{Other}}</span> </h3></a> 
             </div>
+      {{/each}}
+    </center>
 
-            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Break" form="addHobbyForm"></input>
-            </form>
-            </div>
-
-            {{#each hobbies}}
-                <div class="friend-wrapper" id="hobbiesInformation" >
-                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}}: <span style="font-size:16pt; color: black">{{ time }} </span></h3></a> 
-                </div>
-            {{/each}}
-
-            <br><br>
-          </div>  
-        </center>
-
-        {{else}}
-
-            <div class="space"><a href="#" id="addBreak"><button>Input Break</button></a></div>
-            <div class="container breakTime">
-                <!-- <div class="text" id="hobbies"> -->
-                <h1>Input Breaks</h1>
-
-                <form id="addHobbyForm" role="form" method="get" action="/add">
-                     <div class="form-group">
-                     <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="name" placeholder="Ex: Study Break" name="name">
-                    </div>
-        
-
-                    <div class="form-group">
-                <!-- <div class="time"> -->
-                <!--   <form> -->
-                    <label for="time">Time:</label> 
-                    <input type="range"  min="0" max="5" value ="0" step="0.5" onchange="showValue(this.value)" name="time" form="addHobbyForm"/>
-                    <span id="range">0</span>
-                    <script type="text/javascript">
-                    function showValue(newValue)
-                    {
-                        document.getElementById("range").innerHTML=newValue +" hours";
-
-                    }
-                    </script>
-                
-            <!-- </form> -->
-
-            </div>
-
-            <input type="submit" id="submitBtn" class="btn btn-default" value="Add Break" form="addHobbyForm"></input>
-            </form>
-            </div>
-
-            {{#each hobbies}}
-                <div class="friend-wrapper" id="hobbiesInformation" >
-                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}}: <span style="font-size:16pt; color: black">{{ time }} </span></h3></a> 
-                </div>
-            {{/each}}
-
-            <br><br>
-          </div>  
-        </center>
-        {{/if}}
-
-        <!--Google Analytics-->
+    <!--Google Analytics-->
     
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-92787718-1', 'auto');
-          ga('send', 'pageview');
-        </script>
-    </body>
+      ga('create', 'UA-92787718-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
 </html>

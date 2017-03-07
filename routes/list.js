@@ -34,5 +34,5 @@ exports.addTask= function(req, res) {
 
 
 	// res.redirect('/');
-	res.render('breaks', list)
+	res.render('inputHobbies', list)
 }

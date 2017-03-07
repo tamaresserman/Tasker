@@ -39,11 +39,11 @@ p{
 button{
 	background-color:black;
 	color:white;
-	padding-top:10%;
-	padding-bottom:10%;
+	padding-top:5%;
+	padding-bottom:5%;
 	padding-right:20%;
 	padding-left:20%;
-	font-size:50pt;
+	font-size:35pt;
 	border-radius: 6%;
 	border-color:white;
 	border-style: bold;

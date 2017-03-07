@@ -10,7 +10,14 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.breakTime').hide();
+	$("#submitBtn").click(sendClick);
 	$('#addBreak').click(function(){
 		$('.breakTime').show();
+
 	})
+}
+
+function sendClick(e){
+	console.log("button clicked");
+	ga('send','event','addBreak','click');
 }

@@ -34,5 +34,5 @@ exports.addTask= function(req, res) { 
 
 
 	// res.redirect('/');
-	res.render('inputTasks', dataTask)
+	res.render('inputHobbies', dataTask)
  }
