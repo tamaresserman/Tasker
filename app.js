@@ -10,11 +10,11 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var inputHobbies = require('./routes/inputHobbies');
-var hobbies = require('./routes/hobbies');
-var settings = require('./routes/settings');
+var inputBreaks = require('./routes/inputBreaks');
+var moreInfo = require('./routes/moreInfo');
 var keepinmind = require('./routes/keepinmind');
 var list = require('./routes/list');
-var breaks = require('./routes/breaks');
+var hobbies = require('./routes/hobbies');
 // Example route
 // var user = require('./routes/user');
 
@@ -58,11 +58,11 @@ app.get('/hobbies', hobbies.view);
 //input Tasks
 app.get('/inputHobbies', inputHobbies.view);
 //view Settings
-app.get('/settings', settings.view);
+app.get('/moreInfo', moreInfo.view);
 //
 app.get('/keepinmind', keepinmind.view);
 //input bre
-app.get('/breaks', breaks.view);
+app.get('/inputBreaks', inputBreaks.view);
 //
 app.get('/list', list.addTask);
 //add Hobbies
