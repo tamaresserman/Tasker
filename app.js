@@ -9,7 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var inputTasks = require('./routes/inputTasks');
+var inputHobbies = require('./routes/inputHobbies');
 var hobbies = require('./routes/hobbies');
 var settings = require('./routes/settings');
 var keepinmind = require('./routes/keepinmind');
@@ -56,7 +56,7 @@ app.get('/', index.view);
 //view Hobbies
 app.get('/hobbies', hobbies.view);
 //input Tasks
-app.get('/inputTasks', inputTasks.view);
+app.get('/inputHobbies', inputHobbies.view);
 //view Settings
 app.get('/settings', settings.view);
 //
