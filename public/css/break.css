@@ -23,12 +23,17 @@ p{
 	text-align:left;
 }
 
+
 #taskInformation{
     text-align: left;
+    background-color:white;
+    border-radius:5%;
+    border-width:10pt;
+
 }
 h2{
 	text-align: left;
-	color:darkblue;
+	font-color:darkblue;
 }
 .topButtons{
 	position:fixed;
