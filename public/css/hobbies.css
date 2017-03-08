@@ -21,7 +21,7 @@ body {
 
 button{
 	
-	font-size:300%;
+	font-size:30pt;
 	color:white;
 	background-color:black;
 	border-style:solid;
@@ -47,6 +47,7 @@ button{
 }
 a{
 	border-spacing:10pt;
+	font-size:20pt;
 }
 #footer {
    position:relative;
@@ -59,7 +60,7 @@ a{
 
 }
 .navbar-inverse{
-	background-color:white;
+	background-color:black;
 }
 .topButtons{
 	position:fixed;

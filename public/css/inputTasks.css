@@ -3,7 +3,7 @@ h1{
     font-size:300%;
     color:white;
     
-    padding-bottom:10%;
+    padding-bottom:3%;
 }
 h2{
     text-align:left;
@@ -54,7 +54,7 @@ p{
     font-style:bold;
 }
 .navbar-inverse{
-    background-color:white;
+    background-color:black;
 }
 .topButtons{
     position:fixed;
@@ -62,4 +62,11 @@ p{
     text-align: center;
     width:100%;
     left:0;
+}
+a{
+    font-size:20pt;
+}
+h3{
+    color:red;
+    font-size:15pt;
 }

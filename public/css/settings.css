@@ -62,7 +62,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .navbar-inverse{
-  background-color:white;
+  background-color:black;
 }
 .topButtons{
   position:fixed;
@@ -87,7 +87,7 @@ h3{
 }
 a{
   color:darkblue;
-  font-size:15pt;
+  font-size:20pt;
 }
 p{
   color:black;
