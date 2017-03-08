@@ -53,6 +53,7 @@ if ('development' == app.get('env')) {
 
 //login screen
 app.get('/', index.view);
+app.get('/old',index.view)
 //view Hobbies
 app.get('/hobbies', hobbies.view);
 //input Tasks
