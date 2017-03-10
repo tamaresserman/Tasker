@@ -11,7 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var inputHobbies = require('./routes/inputHobbies');
 var inputBreaks = require('./routes/inputBreaks');
-var moreInfo = require('./routes/moreInfo');
+var resources = require('./routes/resources');
 var keepinmind = require('./routes/keepinmind');
 var list = require('./routes/list');
 var hobbies = require('./routes/hobbies');
@@ -59,7 +59,7 @@ app.get('/hobbies', hobbies.view);
 //input Tasks
 app.get('/inputHobbies', inputHobbies.view);
 //view Settings
-app.get('/moreInfo', moreInfo.view);
+app.get('/resources', resources.view);
 //
 app.get('/keepinmind', keepinmind.view);
 //input bre
