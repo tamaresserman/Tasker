@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-image: url("https://static.pexels.com/photos/114296/pexels-photo-114296.jpeg");
     width:100%;
     height:100%;
     overflow: hidden;
@@ -8,8 +8,9 @@ body {
 
 h1 {
 	font: "Lobster";
-	color: white;
+	color: black;
 	font-size: 700%;
+	padding-bottom:10%;
 
 
 	
@@ -43,16 +44,17 @@ button{
 	padding-bottom:5%;
 	padding-right:5%;
 	padding-left:5%;
-	font-size:40pt;
+	font-size:50pt;
 	border-radius: 6%;
 	border-color:white;
-	border-style: bold;
+	border-style: bolder;
+	border-width:50%;
+
 	text-align: center;
-	border-spacing:10pt;
+	
 }
 a{
 	border-color:white;
-	border-width:20%;
-	border-style:bold;
-	border-spacing:10pt;
+	border-width:50%;
+	border-style:bolder;
 }

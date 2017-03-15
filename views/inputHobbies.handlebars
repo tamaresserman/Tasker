@@ -41,55 +41,55 @@
     </div>
     		<h1>Input Hobbies and Constraints</h1>
         <h3>*Constraints are optional</h3>
-        <h2> click <a href="hobbies">here</a> to view already inputted hobbies</h2>
+        <!--<h2> click <a href="hobbies">here</a> to view already inputted hobbies</h2>-->
 
         
     		      <form id="inputTaskForm" role="form" method="get" action="/list">
                 <p>Hobby Name</p>
                          <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="Name" placeholder="Shop" name="name">
+                        <input type="text" class="form-control" id="Name" placeholder="Shop" name="name" style="font-size: 20pt;">
                 </div>
                 
                 <p>Cost</p>
                          <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="Date" placeholder="$20" name="date">
+                        <input type="text" class="form-control" id="Date" placeholder="$20" name="date" style="font-size: 20pt;">
                 </div>
                 <p>Distance</p>
                          <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="startTime" placeholder="20 min drive" name="startTime">
+                        <input type="text" class="form-control" id="startTime" placeholder="20 min drive" name="startTime" style="font-size: 20pt;">
                 </div>
                 <p>Objects</p>
                          <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="endTime" placeholder="Tennis balls" name="endTime">
+                        <input type="text" class="form-control" id="endTime" placeholder="Tennis balls" name="endTime" style="font-size: 20pt;">
                 </div>
                 <p>Location</p>
                  <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="location" placeholder= "Outdoors on grass" name="location">
+                        <input type="text" class="form-control" id="location" placeholder= "Outdoors on grass" name="location" style="font-size: 20pt;">
                 </div>
                 <p>Cleanliness</p>
                  <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="Mess" placeholder="Need to shower after" name="Mess">
+                        <input type="text" class="form-control" id="Mess" placeholder="Need to shower after" name="Mess" style="font-size: 20pt;">
                 </div>
                 <p>Time</p>
                 <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="Time" placeholder="Only in the morning" name="Time">
+                        <input type="text" class="form-control" id="Time" placeholder="Only in the morning" name="Time" style="font-size: 20pt;">
                 </div>
                 <p>Individual/Group</p>
                 <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="Size" placeholder=" Individual activity" name="Size">
+                        <input type="text" class="form-control" id="Size" placeholder=" Individual activity" name="Size" style="font-size: 20pt;">
                 </div>
                 <p>Other</p>
                 <div class="form-group">
                          <!-- <label for="name">Name:</label> -->
-                        <input type="text" class="form-control" id="Other" placeholder="Only do once a week" name="Other">
+                        <input type="text" class="form-control" id="Other" placeholder="Only do once a week" name="Other" style="font-size: 20pt;">
                 </div>
                 
             
@@ -102,7 +102,7 @@
 
                 {{#each Tasks}}
                     <div class="friend-wrapper" id="taskInformation">
-                        <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; color: black">{{ date }}, {{startTime}}, {{endTime}}, {{location}}, {{Mess}}, {{Time}}, {{Size}}, {{Other}} </span></h3></a> 
+                        <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}} <span style="font-size:14pt; font-color: black">{{ date }}, {{startTime}}, {{endTime}}, {{location}}, {{Mess}}, {{Time}}, {{Size}}, {{Other}} </span></h3></a> 
                     </div>
 
                 {{/each}}

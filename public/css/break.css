@@ -1,5 +1,5 @@
 body{
-	background-color:lightblue;
+	background-image:url("http://68.media.tumblr.com/0db48afcf0597b1028f62b4676846973/tumblr_nmyddtsdKu1r32gu0o1_1280.png");
 	padding:40px;
 }
 a{
@@ -14,7 +14,7 @@ button{
 }
 h1{
 	font-size:400%;
-	color:white;
+	color:black;
 }
 p{
 	padding:20px;
@@ -27,8 +27,10 @@ p{
 #taskInformation{
     text-align: left;
     background-color:white;
-    border-radius:5%;
+    border-radius:2%;
     border-width:10pt;
+    padding-right:20%;
+    padding-left:10%;
 
 }
 h2{
@@ -69,4 +71,5 @@ h2{
 }*/
 .navbar-inverse{
 	background-color:black;
+	font-weight:bolder;
 }

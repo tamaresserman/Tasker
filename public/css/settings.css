@@ -63,6 +63,7 @@ input:checked + .slider:before {
 }
 .navbar-inverse{
   background-color:black;
+  font-weight:bolder;
 }
 .topButtons{
   position:fixed;

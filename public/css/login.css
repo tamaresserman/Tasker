@@ -1,18 +1,19 @@
 body{
-	background:lightblue;
+	background-image:url("https://static.pexels.com/photos/114296/pexels-photo-114296.jpeg");
 
 }
 h1{
 	border-top-color:black;
 	font-size:600%;
-	color:white;
+	color:black;
+	
 
 	
 	
 }
 h2 {
 font-size:550%;
-color: white;
+color: black;
 
 }
 button{
@@ -58,5 +59,7 @@ p{
 	font-size:50pt;
 	font-style:bold;
 
+
 }
+
 

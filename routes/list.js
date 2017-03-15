@@ -33,6 +33,6 @@ exports.addTask= function(req, res) {
 	list.list.push(newlist);
 
 
-	// res.redirect('/');
-	res.render('inputHobbies', list)
+	res.redirect('/hobbies');
+	//res.render('inputHobbies', list)
 }
