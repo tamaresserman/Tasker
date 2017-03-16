@@ -49,6 +49,7 @@ button{
 	border-color:white;
 	border-style: bolder;
 	border-width:50%;
+	width:70%;
 
 	text-align: center;
 	
@@ -57,4 +58,5 @@ a{
 	border-color:white;
 	border-width:50%;
 	border-style:bolder;
+	width:50%;
 }

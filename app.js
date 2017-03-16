@@ -15,9 +15,9 @@ var resources = require('./routes/resources');
 var keepinmind = require('./routes/keepinmind');
 var list = require('./routes/list');
 var hobbies = require('./routes/hobbies');
+var reminder = require('./routes/reminder');
 // Example route
 // var user = require('./routes/user');
-var suggestions = require('./routes/suggestions');
 var keepinmind2 = require('./routes/keepinmind2');
 
 
@@ -71,7 +71,11 @@ app.get('/add', add.addHobby);
 //add Tasks
 app.get('/addTask', addTask.addTask);
 //app.get('/addBreaks', addbreaks.addBreaks')
-app.get('/suggestions',suggestions.view);
+//<<<<<<< HEAD
+//=======
+app.get('/reminder', reminder.view);
+
+//>>>>>>> c8e880e23eee440d96b4bbdb91aa6fc299ecf05a
 //B version login screen
 app.get('/new', index.view2);
 
