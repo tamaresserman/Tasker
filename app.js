@@ -6,7 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var inputHobbies = require('./routes/inputHobbies');
@@ -17,13 +17,13 @@ var list = require('./routes/list');
 var hobbies = require('./routes/hobbies');
 // Example route
 // var user = require('./routes/user');
-
+var suggestions = require('./routes/suggestions');
 var keepinmind2 = require('./routes/keepinmind2');
 
 
 // So you can add a new hobby
-var add = require ('./routes/add')
-var addTask = require('./routes/addTask')
+var add = require ('./routes/add');
+var addTask = require('./routes/addTask');
 //var addBreaks = require('.routes/breaks')
 var app = express();
 
@@ -53,7 +53,7 @@ if ('development' == app.get('env')) {
 
 //login screen
 app.get('/', index.view);
-app.get('/old',index.view)
+app.get('/old',index.view);
 //view Hobbies
 app.get('/hobbies', hobbies.view);
 //input Tasks
@@ -71,7 +71,7 @@ app.get('/add', add.addHobby);
 //add Tasks
 app.get('/addTask', addTask.addTask);
 //app.get('/addBreaks', addbreaks.addBreaks')
-
+app.get('/suggestions',suggestions.view);
 //B version login screen
 app.get('/new', index.view2);
 
