@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Reminder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/reminder.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/js/introHCI.js"></script>
+    </head>
+    
+    <body>
+        <center>
+            <div class="topButtons">
+              <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="keepinmind">Home</a></li>
+                           
+                            <li><a href="inputHobbies">Input Hobbies</a></li>
+                            <li><a href="hobbies">View Hobbies</a></li>
+                            <li><a href="inputBreaks">Input Breaks</a></li>
+                            <li><a href="suggestions">Suggestions</a></li>
+                            <li><a href="resources">Further Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+            </div>
+
+            <h1> Filter through your hobbies and receive a suggestion based on your constraints <h1>
+        <div class="all">
+         <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Time
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">1-1.5 hours</a></li>
+            <li class="divider"></li>
+            <li><a href="#">2-2.5 hours</a></li>
+            <li class="divider"></li>
+            <li><a href="#">3-3.5 hours</a></li>
+            <li class="divider"></li>
+            <li><a href="#">4-4.5 hours</a></li>
+            <li class="divider"></li>
+            <li><a href="#">5+ hours</a></li>
+        </ul>
+        </div>   
+        <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">People
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Individual</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Small group</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Big group</a></li>
+            <li class="divider"></li>
+
+            
+            
+        </ul>
+        </div>
+        <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Money
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">$0</a></li>
+            <li class="divider"></li>
+            <li><a href="#">$1-20</a></li>
+            <li class="divider"></li>
+            <li><a href="#">$20-40</a></li>
+            <li class="divider"></li>
+            <li><a href="#">$40-60</a></li>
+            <li class="divider"></li>
+            <li><a href="#">$60-80</a></li>
+            <li class="divider"></li>
+            <li><a href="#">$80-100</a></li>
+            <li class="divider"></li>
+            <li><a href="#">$100+</a></li>
+            
+        </ul>
+        </div>
+      </div>
+        <div class="space"><a href="#" id="suggestHobby"><button>Suggest Hobby</button></a></div>
+            <div class="container hobbySuggestion">
+                <!-- <div class="text" id="hobbies"> -->
+                <h1>Go on a hike!</h1>
+            </div>
+
+                
+
+
+            <!--<button onclick="remindPopup()">Hobby Suggestion</button>
+
+            <script>
+              function remindPopup() {
+                  alert("You have a 3 hour break. Go surfing!");
+              }
+            </script>-->
+            
+
+
+        </center>
+    </body>
+  </html>

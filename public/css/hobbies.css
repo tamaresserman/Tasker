@@ -1,20 +1,25 @@
 h1{
 	text-align:center;
-	font-size:300%;
+	font-size:20pt;
 	color:black;
 	
-	padding-bottom:10%;
 }
 form{text-align:center}
 /*.container{padding: 40px};*/
 body {
 	padding: 40px;
+	background-size:170%;
+	background-image:url("http://68.media.tumblr.com/0db48afcf0597b1028f62b4676846973/tumblr_nmyddtsdKu1r32gu0o1_1280.png");
 	
-	background-image:url("https://c1.staticflickr.com/1/156/429684876_fa2b07654b_b.jpg");
-	background-size:310%;
-	background-position: left;
+	
 }
-
+h2{
+  padding-top:10%;
+  padding-bottom:10%;
+  text-align:center;
+  font-size:20pt;
+  color:black;
+}
 #loginBtnA{
 	background-color:black;
 	color:white;
@@ -94,8 +99,12 @@ a{
 	
 }
 .space{
-	padding-top: 10%;
-	padding-bottom:10%;
+	
+	padding-bottom:5%;
+}
+button{
+  background-color:black;
+  color:white;
 }
 input[type=range] {
   -webkit-appearance: none;

@@ -42,7 +42,7 @@
                       <li><a href="inputHobbies">Input Hobbies</a></li>
                       <li><a href="hobbies">View Hobbies</a></li>
                       <li><a href="inputBreaks">Input Breaks</a></li>
-                      <li><a href="reminder">Reminder</a></li>
+                      <li><a href="suggestions">Suggestions</a></li>
                       <li><a href="resources">Further Resources</a></li>
 
                       
@@ -60,7 +60,7 @@
       <p>Click <a href="inputHobbies">here</a> to add another hobby</p>      <!--<h2>List of Hobbies</h2>-->
       {{#each list}}
           <div class="friend-wrapper" id="taskInformation">
-            <a href="#" class="click-listener"><span style "font-size:40pt; color:black;"> Hobby Name: {{name}}</span> <span><br/></span>
+            <h3><span style "font-size:70pt; color:black;"> </br>Hobby Name: {{name}}</span> <span><br/></span></h3>
             <h3> <span style="font-size:14pt; color: black;">
             1. Cost: {{ date }} <span><br/></span>
             2. Distance:  {{startTime}}<span><br/></span>
@@ -69,7 +69,7 @@
             5. Level of Mess: {{Mess}} <span><br/></span>
             6. Time: {{Time}} <span><br/></span>
             7. Individual/Group: {{Size}} <span><br/></span>
-            8. Other:  {{Other}}</span> </h3></a> 
+            8. Other:  {{Other}}</span> </h3> </br>
             </div>
           </br></br>
       {{/each}}

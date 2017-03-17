@@ -33,7 +33,8 @@
                 <li><a href="inputHobbies">Input Hobbies</a></li>
                 <li><a href="hobbies">View Hobbies</a></li>
                  <li><a href="inputBreaks">Input Breaks</a></li>
-                 <li><a href="reminder">Reminder</a></li>
+                 <li><a href="suggestions">Suggestions
+                    </a></li>
                 <li><a href="resources">Further Resources</a></li>
 
             </ul>
@@ -41,6 +42,7 @@
     </div>
 </nav>
 </div>
+<h2> View and Insert how much free time you have each day to help you be more aware of when you can do your hobbies </h2>
         {{#if showAlternate}}
             <!--<a href="#" id="addBreak"><button>Add Break</button></a>
             <div class="container breakTime">
@@ -126,7 +128,7 @@
 
             {{#each hobbies}}
                 <div class="friend-wrapper" id="breaksInformation" >
-                    <a href="#" class="click-listener" style="display: inline;"> <h3> {{name}}: <span style="font-size:16pt; color: black">{{ time }} </span></h3></a> 
+                    <h3> {{name}} </br><span style="font-size:16pt; color: black">{{ time }} </span></h3> 
                 </div>
                 <p></br> </br></p>
             {{/each}}

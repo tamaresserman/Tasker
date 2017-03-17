@@ -15,6 +15,10 @@ function initializePage() {
 		$('.breakTime').show();
 
 	})
+	$('.hobbySuggestion').hide();
+	$('#suggestHobby').click(function(){
+		$('.hobbySuggestion').show();
+	})
 	$('#loginBtnA').click(sendClickA);
 	$('#loginBtnB').click(sendClickB);
 }
