@@ -65,17 +65,20 @@ font-size:10pt;
 
 }
 .btn{
-font-size:17pt;
+font-size:14pt;
 background-color:black;
+
 
 }
 h1{
     padding-top:13%;
     font-weight:bold;
-    font-size:25pt;
+    font-size:23pt;
+    text-align: left;
+    padding-bottom:20%;
 }
 a{
-    font-size:20pt;
+    font-size:15pt;
 }
 button{
     background-color:black;
@@ -86,5 +89,13 @@ button{
     padding-left:2%;
 }
 .all{
-    padding-bottom:10%;
+    padding-bottom:15%;
+}
+h2{
+    padding-top:13%;
+    font-weight:bold;
+    font-size:23pt;
+    text-align:left;
+   
+
 }
